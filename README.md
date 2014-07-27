@@ -1,7 +1,7 @@
 ##Introduction##
 
 ###The here provided dataset originated from a the 'Getting and Cleaning data' Coursera course which is part if the Data Science Specialisation. 
-### The raw data used to compile the present data set TidyDataSet2.csv has been collected from the accelerometers from the Samsung Galaxy S smartphone. The experiments have been carried out to develop advanced algorithms. A group of 30 volunteers within an age bracket of 19-48 years person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. 
+### The raw data used to compile the present data set TidyDataSet2.txt has been collected from the accelerometers from the Samsung Galaxy S smartphone. The experiments have been carried out to develop advanced algorithms. A group of 30 volunteers within an age bracket of 19-48 years person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. 
 
 ##Description: Getting and Cleaning Data Course Project##
 
@@ -23,6 +23,6 @@
 ### Next, only the measurements on the mean and standard deviation for each measurement were extracted.
 ### The column names of the means and standard deviations that originated from the features.txt were edited, so that no parentheses or dashes were incuded in the names any more. This way, these special characters would not interfere with the syntax of R. To obtain a narrow and long table instead of a wide, but shorter table (I prefer narrow long tables) the mean and standard deviation variables (column names) were 'melted' into one column with the name 'Measurement_Type', the corresponding values were 'melted' into second column 'Measurement_Value'. This now tidy table (5 columns and 679734 rows) was saved as TidyDataSet1.csv. 
 
-### A second, independent tidy data set with the average of each mean and standard deviation variable for each activity and each subject was calculated from the first data set and saved as TidyDataSet2.csv (5 columns and 11880 rows). A detailed description of each column of this data set can be found in the Codebook.md. The code for this project can be found in the Rscript_tidy_data.R.
+### A second, independent tidy data set with the average of each mean and standard deviation variable for each activity and each subject was calculated from the first data set and saved as TidyDataSet2.csv (5 columns and 11880 rows). A detailed description of each column of this data set can be found in the Codebook.md. The code for this project can be found in the run_analysis.R.
 
 
