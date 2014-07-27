@@ -115,7 +115,7 @@ colnames(means_stds)<- gsub("BodyBody","Body",colnames(means_stds),fixed=TRUE)
         #reshape data set to get a table with 5 columns, new columns: Measurement type and Measurement value
 means_stds_new<-melt(means_stds,id=c("Partition","Activity_Names","Subject"),variable.name="Measurement_Type",value.name="Measurement_Value")
         #writes data.frame means_stds_new into a .csv file
-write.table(means_stds_new,"/Users/hss1g09/DataScience/Getting and Cleaning Data/Asignment/TidyDataSet1.csv")
+write.table(means_stds_new,"/Users/hss1g09/DataScience/Getting and Cleaning Data/Asignment/TidyDataSet1.txt")
 
 
 #ASSIGNMENT POINT 5-------------------------------------------------------------
@@ -126,4 +126,4 @@ average_data <- aggregate(. ~ Subject + Activity_Names + Partition, data = means
 colnames(average_data)<- gsub("mean","average_mean",colnames(average_data))
 colnames(average_data)<- gsub("std","average_std",colnames(average_data))
 average_data_new<-melt(average_data,id=c("Partition","Activity_Names","Subject"),variable.name="Measurement_Type",value.name="Measurement_Value")
-write.table(average_data_new,"/Users/hss1g09/DataScience/Getting and Cleaning Data/Asignment/TidyDataSet2.csv")
+write.table(average_data_new,"/Users/hss1g09/DataScience/Getting and Cleaning Data/Asignment/TidyDataSet2.txt")
