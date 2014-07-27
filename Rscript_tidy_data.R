@@ -32,7 +32,7 @@ Sub_XY_train<-cbind(subject_train,XY_train) ##7352 obs. of  563 variables:
 Partition<-c(rep("train",nrow(Sub_XY_train)))
 Sub_XY_train<-cbind(Partition,Sub_XY_train)
 
-#merge TEST DATASET
+#TEST DATASET
 subject_test<-read.table(data[14]) #2947 obs. of  1 variable
 X_test<-read.table(data[15]) #2947 obs. of  561 variables
 Y_test<-read.table(data[16])#2947 obs. of  1 variable
