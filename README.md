@@ -10,11 +10,11 @@ The original raw data contained a pre-processed data set that was partitioned in
 #####Common files of the train and test data set:
 * activity_labels.txt
 * features.txt
-* Train data set files
+#####Train data set files
 * subject_train.txt
 * X_train.txt
 * y_train.txt
-* Test data set files
+#####Test data set files
 * subject_test.txt
 * X_test.txt
 * y_test.txt
